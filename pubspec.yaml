@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   clerk_flutter: ^0.0.8-beta
+  url_launcher: ^6.3.0
   
 
   # The following adds the Cupertino Icons font to your application.

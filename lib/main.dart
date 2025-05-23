@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:clerk_flutter/clerk_flutter.dart'; 
 import 'package:clerk_login/auth_wrapper.dart';
 
-
+// const String clerkPublishableKey = 'CLERK_API_PUBLISHABLE_KEY';
 void main() {
   runApp(const MyApp());
 }
@@ -17,9 +17,10 @@ class MyApp extends StatelessWidget {
         publishableKey: clerkPublishableKey,
       ),
       child: MaterialApp(
-        title: 'Clerk Flutter Demo',
+        title: 'Clerk + Flutter M16 Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          primarySwatch: Colors.blue,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
           useMaterial3: true,
         ),
         debugShowCheckedModeBanner: false,

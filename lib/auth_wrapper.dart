@@ -12,10 +12,21 @@ class AuthWrapper extends StatelessWidget {
     return ClerkErrorListener(
       child: ClerkAuthBuilder(
         signedInBuilder: (BuildContext context, ClerkAuthState authState) {
-          return const HomePage(); 
+          return HomePage(); 
         },
         signedOutBuilder: (BuildContext context, ClerkAuthState authState) {
-          return const ClerkAuthentication();
+          return Scaffold(
+            appBar: AppBar(
+              title: const Text('Clerk + Flutter M16 Demo'),
+            ),
+            body: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Center(
+                child: ClerkAuthentication(),
+              ),
+            ),
+          
+          );
         },
       ),
     );
